@@ -1,0 +1,103 @@
+/* Reset any browser-specific styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.header-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.header-container h1,
+.header-container h2 {
+  color: red;
+}
+
+.option-container h2,
+.container h2 {
+  color: #000;
+}
+
+.option-1 {
+  padding: 20px;
+}
+
+.button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: darkred;
+}
+
+.dropdown {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 0 45%;
+  transition: transform 0.2s; /* Animation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+/* Adjustments for different screen sizes */
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1 0 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    flex: 1 0 20%;
+  }
+}
+
+img {
+  border-bottom: 3px solid red; /* Red highlight for images */
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.header,
+.subheader {
+  margin: 0;
+  color: #000;
+}
